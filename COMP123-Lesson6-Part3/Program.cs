@@ -8,7 +8,7 @@ namespace COMP123_Lesson6_Part3
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
         }
     }

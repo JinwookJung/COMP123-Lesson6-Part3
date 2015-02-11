@@ -10,7 +10,7 @@ namespace COMP123_Lesson6_Part3
     {
         static void Main()
         {
-            Card myCard = new Card("Ace", "Hearts");
+            Card myCard = new Card("Ace", Suits.HEARTS);
 
             myCard.Show();
 

@@ -10,9 +10,12 @@ namespace COMP123_Lesson6_Part3
     {
         static void Main()
         {
-            Card myCard = new Card("Ace", Suits.HEARTS);
 
-            myCard.Show();
+
+            Deck myDeck = new Deck();
+
+            Console.WriteLine(myDeck.pickCard(0));
+
 
 
             waitForAnyKey();

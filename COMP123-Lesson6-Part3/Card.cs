@@ -9,11 +9,11 @@ namespace COMP123_Lesson6_Part3
     class Card
     {
         // INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++
-        private string _face;
+        private int _face;
         private string _suit;
 
         // PROPERTIES ++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public string Face
+        public int Face
         {
             get
             {
@@ -30,16 +30,16 @@ namespace COMP123_Lesson6_Part3
         }
 
         // CONSTRUCTOR(S) ++++++++++++++++++++++++++++++++++++++++++++++++
-        public Card(string face, string suit)
+        public Card(int face, string suit)
         {
             this._face = face;
             this._suit = suit;
         }
 
-        // METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public void Show()
+        // OVERRIDDEN METHODS ++++++++++++++++++++++++++++++++++++++++++++++
+        public override string ToString()
         {
-            Console.WriteLine("{0} of {1}", this._face, this._suit);
+            return this._face + " of " + this._suit;
         }
     }
 }

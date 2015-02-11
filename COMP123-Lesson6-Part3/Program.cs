@@ -10,17 +10,12 @@ namespace COMP123_Lesson6_Part3
     {
         static void Main()
         {
-
-
             Deck myDeck = new Deck();
+            myDeck.Shuffle();
 
-            Console.WriteLine(myDeck.pickCard(0));
-
-
+            myDeck.DealCards(7); // Deal 5 cards
 
             waitForAnyKey();
-
-
         }
 
         private static void waitForAnyKey()

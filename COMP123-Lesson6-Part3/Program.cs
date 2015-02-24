@@ -13,7 +13,8 @@ namespace COMP123_Lesson6_Part3
             Deck myDeck = new Deck();
             myDeck.Shuffle();
 
-            myDeck.DealCards(7); // Deal 5 cards
+            myDeck.DealCards(5); // Deal 5 cards
+
 
             waitForAnyKey();
         }
